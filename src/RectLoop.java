@@ -33,7 +33,7 @@ public class RectLoop extends MyFrame2 {
 public class RectLoop extends MyFrame2 {
 	public void run() {
 		//fillRect(205,0,1,400);
-		int n=15;
+		int n=10;
 		int y=70;
 		for (int i=0 ; i<n ; i++) {
 			
@@ -63,13 +63,14 @@ public class RectLoop extends MyFrame2 {
 	}
 }
 
-/*
-public class RectLoop extends MyFrame2 {
+
+
+/*public class RectLoop extends MyFrame2 {
 	public void run() {
-		fillRect(205,0,1,400);
-		int n=15;
+		//fillRect(205,0,1,400);
+		int n=10;
 		int y=70;
-		int c=200;	//色の初期値
+		int c=250;	//色の初期値
 		//int count;
 		for (int i=0 ; i<n ; i++) {
 			
@@ -77,7 +78,7 @@ public class RectLoop extends MyFrame2 {
 			x+=(-10)*i;
 			
 			for(int j=0 ; j<i+1 ; j++) {
-				setColor(0,c+(-5*(i+j)),0);
+				setColor(0,c+(5*(i+j)),0);
 				fillRect(x,y,10,10);
 				System.out.println(x);
 				System.out.println(y);
@@ -86,7 +87,7 @@ public class RectLoop extends MyFrame2 {
 				x+=20;
 				//System.out.println(a);
 			}
-			c=c+(i+2)*5;
+			c=c+(-(i+2)*5);
 			y+=20;
 		}	
 	}
