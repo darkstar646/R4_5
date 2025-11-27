@@ -29,7 +29,8 @@ public class RectLoop extends MyFrame2 {
 }
 */
 
-public class RectLoop extends MyFrame2 {
+
+/*public class RectLoop extends MyFrame2 {
 	public void run() {
 		
 		int y = 50;
@@ -54,6 +55,130 @@ public class RectLoop extends MyFrame2 {
 		System.out.println("プログラムを実行します");
 		MyFrame2 frame1=new RectLoop();
 		frame1.setLocation(200,200);
+		frame1.setSize(400,400);
+
+	}
+}
+*/
+
+/*public class RectLoop extends MyFrame2 {
+	
+	//確認用の円
+	 public void drawCircle(int cx, int cy, int r) {
+	    	double x;
+	    	double y;
+	    	for(int i=0; i<360; i++) {
+	    		x = r*Math.cos(Math.toRadians(i))+cx;
+	    		y = r*Math.sin(Math.toRadians(i))+cy;
+	    		
+	    		fillRect((int)x,(int)y,1,1);
+	    	}
+	    	
+	    }
+	 
+	public void run() {
+		
+		fillRect(200,0,1,400);
+		
+		//確認用の円の表示
+		for(int i=0; i<40; i++) {
+			drawCircle(400,0,(i+1)*10);
+		}
+		
+		int y = 50;
+		for (int i=0 ; i<10 ; i++) {
+			
+			int x=195;
+			y=y+10;
+			x+=(-10)*i;
+			
+			for(int j=0 ; j<i+1 ; j++) {
+				setColor(0,40+5*(i+j),0);
+				fillRect(x,y,10,10);
+				//int a=90+10*(i+j);
+				x+=20;
+				//System.out.println(a);
+			}
+			y+=10;
+		}	
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("プログラムを実行します");
+		MyFrame2 frame1=new RectLoop();
+		frame1.setLocation(200,200);
+		frame1.setSize(400,400);
+
+	}
+}
+*/
+
+//(0,0)
+/*public class RectLoop extends MyFrame2 {
+	public void run() {
+		//fillRect(205,0,1,400);
+		int n=10;
+		int y=70;
+		for (int i=0 ; i<n ; i++) {
+			
+			int x=200;
+			x+=(-10)*i;
+			
+			for(int j=0 ; j<i+1 ; j++) {
+				setColor(0,(100+4*n)+(-4*(i+j)),0);
+				fillRect(x,y,10,10);
+				//System.out.println(x);
+				//System.out.println(y);
+				//System.out.println("=========");
+				//int a=90+10*(i+j);
+				x+=20;
+				//System.out.println(a);
+			}
+			y+=20;
+		}	
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("プログラムを実行します");
+		MyFrame2 frame1=new RectLoop();
+		frame1.setLocation(0,0);
+		frame1.setSize(400,400);
+
+	}
+}
+*/
+
+public class RectLoop extends MyFrame2 {
+	public void run() {
+		//fillRect(205,0,1,400);
+		int n=10;
+		int y=70;
+		int c=250;	//色の初期値
+		//int count;
+		for (int i=0 ; i<n ; i++) {
+			
+			int x=200;
+			x+=(-10)*i;
+			
+			for(int j=0 ; j<i+1 ; j++) {
+				setColor(0,c+(5*(i+j)),0);
+				fillRect(x,y,10,10);
+				System.out.println(x);
+				System.out.println(y);
+				System.out.println("=========");
+				//int a=90+10*(i+j);
+				x+=20;
+				//System.out.println(a);
+			}
+			c=c+(-(i+2)*5);
+			y+=20;
+		}	
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("プログラムを実行します");
+		MyFrame2 frame1=new RectLoop();
+		frame1.setLocation(0,0);
 		frame1.setSize(400,400);
 
 	}
