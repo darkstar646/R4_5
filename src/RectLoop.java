@@ -29,10 +29,8 @@ public class RectLoop extends MyFrame2 {
 }
 */
 
-<<<<<<< HEAD
 
 /*public class RectLoop extends MyFrame2 {
-=======
 //(0,0)
 public class RectLoop extends MyFrame2 {
 >>>>>>> branch 'master' of https://github.com/darkstar646/R4_5.git
@@ -192,7 +190,7 @@ public class RectLoop extends MyFrame2 {
 
 	}
 }
-=======
+
 
 
 
@@ -232,4 +230,4 @@ public class RectLoop extends MyFrame2 {
 	}
 }
 */
->>>>>>> branch 'master' of https://github.com/darkstar646/R4_5.git
+
